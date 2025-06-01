@@ -1,0 +1,66 @@
+.projectsSection {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background: #181c23;
+    border-radius: 1.5rem;
+    padding: 2rem 1.5rem 1.2rem 1.5rem;
+    box-shadow: 0 2px 16px 0 #0002;
+    height: 42vh;
+    overflow: scroll;
+}
+  
+.projectCard {
+    border-radius: 1.5rem;
+    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+    border: 1px solid #1f2227;
+    flex: 1 1 260px;
+    min-width: 240px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+  
+  .projectIcons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .icon {
+    background: #23272f;
+    color: #60a5fa;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.7rem;
+    display: inline-block;
+  }
+  
+  .projectTitle {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0.2rem 0 0.1rem 0;
+  }
+  
+  .projectDesc {
+    color: #c3c8d4;
+    font-size: 0.98rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projectImage {
+    height: 70px;
+    background: #23272f;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  @media (max-width: 900px) {
+    .projectsSection {
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+  } 

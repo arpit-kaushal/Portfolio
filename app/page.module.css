@@ -1,22 +1,38 @@
-.container {
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 2rem;
+}
+
+.leftColumn {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  padding: 40px;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.name {
-  font-size: 60px;
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.subtitle {
-  font-size: 20px;
-  margin-top: 20px;
+.bottomRight {
+  display: flex;
+  gap: 2rem;
 }
 
-.picture {
-  border-radius: 50%;
-  height: 500px;
-  width: 500px;
+@media (max-width: 900px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+  .leftColumn, .rightColumn {
+    gap: 1.5rem;
+  }
+  .bottomRight {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
